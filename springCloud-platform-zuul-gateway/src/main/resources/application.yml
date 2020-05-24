@@ -1,0 +1,22 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka
+
+# 可以在此配置路由映射，使得外部不能看到使用的是哪一个服务
+# 解决跨域
+zuul:
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
+#  prefix: /atguigu
+#  ignored-services: "*" 被忽略的服务名 ---在此配置后无法在通过原服务名访问，只能通过路由访问
+#  routes:
+#    mydept.serviceId: 服务名
+#    mydept.path: /mydept/**
+

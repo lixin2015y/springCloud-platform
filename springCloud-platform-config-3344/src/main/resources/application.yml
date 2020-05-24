@@ -1,0 +1,16 @@
+server:
+    port: 3344
+spring:
+  application:
+    name: config-server
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/config-server-db?useSSL=true
+#    username: root
+#    password: 123456
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:lixin2015y/springClouldConfig.git #GitHub上面的git仓库名字
+
