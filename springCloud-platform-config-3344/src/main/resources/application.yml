@@ -13,4 +13,5 @@ spring:
       server:
         git:
           uri: git@github.com:lixin2015y/springClouldConfig.git #GitHub上面的git仓库名字
-
+          username: lixin2015y
+          password: Lx123698745
