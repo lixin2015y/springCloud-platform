@@ -6,7 +6,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 
 /**
- * 测试是不是连上了github http://localhost:3344/application-dev.yml
+ * 测试是不是连上了github http://localhost:3344/application-dev.yml 123
  */
 @SpringBootApplication
 @EnableConfigServer
